@@ -6,7 +6,7 @@ Run this on Linux or in WSL2:
 ````bash
 python3 dumper.py <ps5 ip> <ftp port> <PPSA title_id> 
 ```
-This will grab all the required files from ftp including the NPWR files
+This will grab all the required files from ftp including the NPWR files. They are a placed in the script directory in a folder named dumps.
 
 ex: usage `python3 dumper.py 192.168.1.92 1337 PPSA02739`
 ```
