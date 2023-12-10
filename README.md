@@ -1,4 +1,4 @@
-## Thanks sepehrsb & EchoStretch!
+## Thanks EchoStretch & Discord friend for testing 
 
 This code replaces step 2 to 6 from the game dump process by automating it.
 
