@@ -98,13 +98,13 @@ npwr_index = content.find(b'NPWR')
 
 # If "NPWR" is found, extract the value after it and remove the last two characters
 if npwr_index != -1:
-    npwr_value = content[npwr_index + 4: npwr_index + 4 + 8].decode('utf-8')[:-2]
+    npwr_value = content[npwr_index + 4: npwr_index + 4 + 10].decode('utf-8')[:-2]
     print(f'NPWR value: {npwr_value}')
 
     # Example usage to download uds00.ucp and trophy00.ucp
-    uds_remote_path = f'/user/np_uds/nobackup/conf/{npwr_value}/uds.ucp'
+    uds_remote_path = f'/user/np_uds/nobackup/conf/NPWR{npwr_value}/uds.ucp'
     uds_local_path = os.path.join('dumps', f'{PPSA}-app0', 'sce_sys', 'uds', 'uds00.ucp')
-    trophy_remote_path = f'/user/trophy2/nobackup/conf/{npwr_value}/TROPHY.UCP'
+    trophy_remote_path = f'/user/trophy2/nobackup/conf/NPWR{npwr_value}/TROPHY.UCP'
     trophy_local_path = os.path.join('dumps', f'{PPSA}-app0', 'sce_sys', 'trophy2', 'trophy00.ucp')
 
     try:
